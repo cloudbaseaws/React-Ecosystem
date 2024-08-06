@@ -1,0 +1,21 @@
+:root {
+
+}
+.menu-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.menu-item {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu-item:hover {
+  background-color: blue;
+}
