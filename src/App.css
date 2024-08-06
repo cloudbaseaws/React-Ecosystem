@@ -9,6 +9,19 @@
     left: 0;
     background-color: #f0f0f0;
     padding: 10px;
+    .menu-bar {
+      position: relative;
+    }
+    
+    .popout-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
   }
 
 }
