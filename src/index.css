@@ -1,21 +1,46 @@
-:root {
+:root{ 
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  perspective: 1000px; /* Adjust perspective as needed */
 }
-.menu-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-button {
   background-color: #f0f0f0;
-  padding: 10px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  transform: perspective(100px) rotateX(3deg) rotateY(-3deg);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.menu-item {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
+.menu-button:hover {
+  transform: perspective(100px) rotateX(0deg) rotateY(0deg);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+}.navbar ul {
+  list-style: none; /* Removes bullets */
+  margin: 0;
+  padding: 0;
 }
 
-.menu-item:hover {
-  background-color: blue;
+.navbar a {
+  text-decoration: none; /* Removes underline */
+}.popout-menu {
+  position: relative;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px; /* Add padding for spacing */
 }
+

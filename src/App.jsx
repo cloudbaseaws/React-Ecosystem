@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MenuBar from './Components'; // Import the MenuBar component
+import './index.css'
+import './App.css'
+import MenuBar from './Components';
 import Home from './Home';
 import About from './About'; // Import your About component
 import Contact from './Contact'; // Import your Contact component 
@@ -11,8 +13,8 @@ function App() {
       <MenuBar />
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/contact" element={<Contact/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       {/* Rest of your app content */}
     </div>
