@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 
-const MenuBar = () => {
+const Menu = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const menuRef = useRef(null);
 
@@ -25,16 +25,16 @@ const MenuBar = () => {
   return (
     <div className="menu-bar">
       <ul>
-        <li onClick={() => handleMenuItemClick('home')}>Home</li>
-        <li onClick={() => handleMenuItemClick('about')}>About</li>
-        <li onClick={() => handleMenuItemClick('contact')}>Contact</li>
+        <li onClick={() => handleMenuItemClick('gears')}>Gears</li>
+        <li onClick={() => handleMenuItemClick('shafts')}>Shafts</li>
+        <li onClick={() => handleMenuItemClick('wheels')}>Wheels</li>
       </ul>
       {activeMenu && (
         <div className="popout-menu" ref={menuRef}>
           {/* Content for the active menu */}
-          {activeMenu === 'home' && <div>Home </div>}
-          {activeMenu === 'about' && <div>About</div>}
-          {activeMenu === 'contact' && <div>Contact</div>}
+          {activeMenu === 'gears' && <div>Gears </div>}
+          {activeMenu === 'shafts' && <div>Shafts</div>}
+          {activeMenu === 'wheels' && <div>Wheels</div>}
         </div>
       )}
     </div>

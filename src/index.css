@@ -1,5 +1,13 @@
 :root{ 
-
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    z-index: 999; /* Ensure it's above other content */
+  }
+  
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -17,14 +25,14 @@
   background-color: #f0f0f0;
   border: none;
   padding: 10px 20px;
-  cursor: pointer;
+  cursor: crosshair;
   transition: transform 0.2s ease-in-out;
   transform: perspective(100px) rotateX(3deg) rotateY(-3deg);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu-button:hover {
-  transform: perspective(100px) rotateX(0deg) rotateY(0deg);
+  transform: perspective(100px) rotateX(2deg) rotateY(3deg);
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 }.navbar ul {
