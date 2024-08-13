@@ -1,12 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import PertEstimation from './PertEstimation'; // Import your PERT estimation component
 
 const MenuBar = () => {
+  const [isPertOpen, setIsPertOpen] = useState(false);
+
+  const handlePertClick = () => {
+    setIsPertOpen(true);
+  };
+
+  const handleClosePert = () => {
+    setIsPertOpen(false);
+  };
+
   return (
     <nav className="menu-bar">
+      {/* ... other menu items */}
+      <li onClick={handlePertClick}>PERT Estimation</li>
+      {isPertOpen && <PertEstimation onClose={handleClosePert} />}
+
       <ul>
         <li>
-          <Link to="/" className="menu-item">Home</Link>
+          <Link to="/" className="menu-item">PertEstimation</Link>
         </li>
         <li>
           <Link to="/about" className="menu-item">About</Link>

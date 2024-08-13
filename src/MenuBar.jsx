@@ -25,8 +25,8 @@ const Menu = () => {
   return (
     <div className="menu-bar">
       <ul>
-        <li onClick={() => handleMenuItemClick('home')}>Gears</li>
-        <li onClick={() => handleMenuItemClick('about')}>Shafts</li>
+        <li onClick={() => handleMenuItemClick('pertestimation')}>PertEstimation</li>
+        <li onClick={() => handleMenuItemClick('about')}>Appbout</li>
         <li onClick={() => handleMenuItemClick('contact')}>Wheels</li>
         <li onClick={() => handleMenuItemClick('gears')}>Gears</li>
         <li onClick={() => handleMenuItemClick('shafts')}>Shafts</li>
@@ -35,7 +35,7 @@ const Menu = () => {
       {activeMenu && (
         <div className="popout-menu" ref={menuRef}>
           {/* Content for the active menu */}
-          {activeMenu === 'home' && <div>Home </div>}
+          {activeMenu === 'PertEstimation' && <div>PertEstimation </div>}
           {activeMenu === 'about' && <div>About </div>}
           {activeMenu === 'contacts' && <div>Contacts </div>}
           {activeMenu === 'gears' && <div>Gears </div>}
