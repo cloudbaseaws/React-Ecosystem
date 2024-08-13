@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import PertEstimation from './PertEstimation'; // Import your PERT estimation component
-
+import PertEstimation from './Pert'; // Import your PERT estimation component
+import ThreePointEstimation from './ThreePointEstimation';
 const MenuBar = () => {
   const [isPertOpen, setIsPertOpen] = useState(false);
 

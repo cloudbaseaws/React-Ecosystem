@@ -10,7 +10,7 @@ import Gears from './Gears';
 import Wheels from './Wheels';
 import Shafts from './Shafts';
 import PertEstimation from './Pert';
-import PertEstimation from './ThreePointEstimation'; // Import your PERT estimation component
+import ThreePointEstimation from './ThreePointEstimation'; 
 
 function App() {
   return (
